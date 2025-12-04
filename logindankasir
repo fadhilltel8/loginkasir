@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 # Batas Login
-attempts = 2
+attempts = 3
 
 # ========= LOGIN WINDOW =========
 def login():
@@ -16,13 +16,16 @@ def login():
         open_main_window()
 
     else:
-        attempts -= 2
-        messagebox.showerror("Error", "Username atau Password salah!\Sisa percobaan:")
+        attempts -= 1  
 
-        # Jika percobaan habis
+        messagebox.showerror(
+            "Error",
+            f"Username atau Password salah!\nSisa percobaan: {attempts}")
+
+        # Jika kesempatan habis
         if attempts == 0:
             messagebox.showwarning("Gagal", "Percobaan habis! Program ditutup.")
-            login_window.destroy()  
+            login_window.destroy()
 
 # ========= MAIN WINDOW =========
 def open_main_window():
