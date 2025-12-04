@@ -1,8 +1,13 @@
 import tkinter as tk
 from tkinter import messagebox
 
+# ========= BATAS LOGIN =========
+attempts = 0     # jumlah percobaan login
+
 # ========= LOGIN WINDOW =========
 def login():
+    global attempts
+
     username = entry_user.get()
     password = entry_pass.get()
 
@@ -10,7 +15,14 @@ def login():
         login_window.destroy()
         open_main_window()
     else:
-        messagebox.showerror("Error", "Username atau Password salah!")
+        attempts += 1
+        sisa = 2 - attempts
+
+        if attempts >= 2:
+            messagebox.showerror("Gagal", "Anda gagal login 2 kali! Program ditutup.")
+            login_window.destroy()   # menutup program
+        else:
+            messagebox.showerror("Error", f"Username atau Password salah!\nSisa percobaan: {sisa}")
 
 # ========= MAIN WINDOW =========
 def open_main_window():
@@ -65,7 +77,7 @@ Harga = Rp. {harga}
 Total = Rp. {total}
 Tunai = Rp. {tunai}
 Kembali = Rp. {kembali}
-Terimakasih  sudah berbelanja di toko kami!!!
+Terimakasih sudah berbelanja di toko kami!!!
 """
     messagebox.showinfo("Invoice", invoice)
 
@@ -85,3 +97,4 @@ entry_pass.pack()
 tk.Button(login_window, text="Login", command=login).pack()
 
 login_window.mainloop()
+                                             
