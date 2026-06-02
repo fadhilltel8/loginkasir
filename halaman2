@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri & Fakta Unik</title>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="halaman2.html">Galeri & Fakta</a>
+  </nav>
+
+  <hr>
+
+  <h1>Galeri Perjalanan Hidup Saya</h1>
+  <p>Dari lahir sampai sekarang, sedikit demi sedikit jadi diri sendiri.</p>
+
+  <hr>
+
+  <h2>2015 - Jalan jalan ke bogor</h2>
+  <img src="tk.jpeg" width="200">
+  <p>jalan jalan ke bogor belajar bertani dan dan lainya</p>
+
+  <br>
+
+  <h2>📚 2018 — Masuk SD</h2>
+  <img src="Poto_kecil.jpeg" width="300">
+  <p>disini aku jalan ke prj saat aku kelas 3 sd</p>
+
+  <br>
+
+  <h2>👌 2025 — sebelum lulus</h2>
+  <img src="Poto_kecil.jpeg" alt="Foto SMK" width="300">
+  <p>saat saya smp dan ini foto terakhir saya sebelum kelulusan saya bersama teman saya bernama akbar</p>
+
+  <br>
+
+  <h2>😊 2025 — hari kelulusan smp</h2>
+  <img src="Poto_kecil.jpeg" alt="Foto Kompetisi" width="300">
+  <p>hari kelulusan saya bersama teman teman saya.</p>
+ 
+
+  <h2>🏆 2025 — masuk telkom</h2>
+  <img src="https://picsum.photos/seed/competition/300/200" alt="Foto Kompetisi" width="300">
+  <p>Ikut berbagai kompetisi dan lomba keterampilan. Pengalaman yang ngajarin banyak hal — bukan cuma soal menang, tapi soal proses dan mental.</p>
+  
+  <hr>
+
+  <a href="halaman 1.html">← Kembali ke Home</a>
+
+  <br><br>
+  <footer>© 2026 Muhammad Faadhil Arbyan</footer>
+
+</body>
+</html>
